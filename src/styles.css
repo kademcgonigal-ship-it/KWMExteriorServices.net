@@ -1,0 +1,308 @@
+@import "tailwindcss" source("../");
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', system-ui, sans-serif;
+  background: #111;
+  color: white;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.kwm-header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.kwm-logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.kwm-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.kwm-nav a:hover {
+  color: #6baa3d;
+}
+
+/* Hero */
+.kwm-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/work-lighting-3.jpeg')
+      center / cover no-repeat;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.kwm-hero-content {
+  max-width: 700px;
+}
+
+.kwm-hero-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.kwm-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.kwm-green {
+  color: #6baa3d;
+}
+
+/* Buttons */
+.kwm-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.kwm-btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.kwm-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.kwm-btn-green {
+  background: #6baa3d;
+  color: white;
+}
+
+.kwm-btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+/* Sections */
+.kwm-section {
+  padding: 80px 8%;
+}
+
+.kwm-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.kwm-section-title h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+/* Cards */
+.kwm-card {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #2c2c2c;
+}
+
+.kwm-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+
+/* Services grid */
+.kwm-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* About */
+.kwm-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.kwm-about-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Gallery */
+.kwm-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.kwm-gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.kwm-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.kwm-gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+/* Reviews grid */
+.kwm-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Footer */
+.kwm-footer {
+  background: black;
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.kwm-footer h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.kwm-footer p {
+  margin-bottom: 10px;
+}
+
+/* Quote Form */
+.kwm-quote-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.kwm-quote-form {
+  background: #1c1c1c;
+  border: 1px solid #2c2c2c;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kwm-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.kwm-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kwm-form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kwm-form-group input,
+.kwm-form-group select,
+.kwm-form-group textarea {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 1rem;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.kwm-form-group input:focus,
+.kwm-form-group select:focus,
+.kwm-form-group textarea:focus {
+  border-color: #6baa3d;
+}
+
+.kwm-form-group input::placeholder,
+.kwm-form-group textarea::placeholder {
+  color: #555;
+}
+
+.kwm-form-group select option {
+  background: #1c1c1c;
+}
+
+.kwm-form-group textarea {
+  resize: vertical;
+}
+
+.kwm-quote-success {
+  background: #1c1c1c;
+  border: 1px solid #2c2c2c;
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.kwm-quote-success h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.kwm-quote-success p {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .kwm-hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .kwm-nav {
+    display: none;
+  }
+
+  .kwm-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .kwm-quote-form {
+    padding: 24px;
+  }
+}
