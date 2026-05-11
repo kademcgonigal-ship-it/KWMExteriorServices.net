@@ -37,4 +37,4 @@ This runs on port 8888 and emulates Netlify Functions, redirects, and other plat
 ## Contact
 
 - **Phone/Text:** 682-244-5367
-- **Email:** Kadesales@kwmexteriorservices.com
+- **Email:** kademcgonigal@kwmexteriorservices.net

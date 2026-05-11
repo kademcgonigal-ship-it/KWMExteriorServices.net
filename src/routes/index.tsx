@@ -59,6 +59,7 @@ function QuoteForm() {
       className="kwm-quote-form"
     >
       <input type="hidden" name="form-name" value="quote-request" />
+      <input type="hidden" name="subject" value="New Quote Request from %{formName}" />
       <p style={{ display: 'none' }}>
         <label>Don't fill this out: <input name="bot-field" /></label>
       </p>
@@ -197,7 +198,7 @@ function Home() {
             </a>
             <a
               className="kwm-btn kwm-btn-outline"
-              href="mailto:Kadesales@kwmexteriorservices.com"
+              href="mailto:kademcgonigal@kwmexteriorservices.net"
             >
               EMAIL US
             </a>
@@ -296,7 +297,7 @@ function Home() {
           <strong>Text or Call:</strong> 682-244-5367
         </p>
         <p>
-          <strong>Email:</strong> Kadesales@kwmexteriorservices.com
+          <strong>Email:</strong> kademcgonigal@kwmexteriorservices.net
         </p>
         <br />
         <p>Free Estimates Available</p>
